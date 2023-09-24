@@ -46,7 +46,42 @@ ul {
     list-style: none;
 }
 
-/*Studio Styles*/
+.container {
+    margin: 0px;
+    width: 1600px;
+    display: flex-inline;
+    align-items: center;
+    justify-items: center;
+}
+
+.intro,
+.what-we-do,
+.our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/*Header Styles*/
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+header .logo {
+    padding-right: 43px;
+    padding-left: 215px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-right: 385px;
+}
 
 .nav-link {
     font-size: 14px;
@@ -72,14 +107,25 @@ ul {
     color: var(--details-color);
 }
 
+.contacts{
+        display: flex;
+        align-content: center;
+        gap: 40px;
+}
 .contact-details:hover,
 .contact-details:focus,
 .contact-details:active {
 color: var(--link-color);
 }
 
+/*Studio Styles*/
+
 .intro {
     background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .intro-title {
@@ -89,6 +135,9 @@ color: var(--link-color);
         letter-spacing: 0.06em;
         text-align: center;
         color: #FFFFFF;
+        width: 696px;
+        margin-top: 200px;
+        padding-bottom: 30px;
 }
 
 .request-our-services {
@@ -101,6 +150,9 @@ color: var(--link-color);
         border:none;
         color: #FFFFFF;
         cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin-bottom: 200px;
 }
 .request-our-services:hover,
 .request-our-services:focus,
@@ -108,9 +160,20 @@ color: var(--link-color);
     color: #FFFFFF;
     background-color: #188CE8;
 }
-.competitive-advantage {
-    display: inline-block;
-    width: 270px;
+
+.what-we-do {
+    display: flex;
+    flex-direction: column;
+    margin-top: 94px;
+    gap: 94px;
+}
+
+.competitive-advantages {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    margin-left: 215px;
 }
 .competitive-advantages-title {
         font-size: 14px;
@@ -129,6 +192,13 @@ color: var(--link-color);
         color: var(--details-color);
 }
 
+.what-we-do div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
 .h2-title {
         font-size: 36px;
         font-weight: 700;
@@ -137,17 +207,35 @@ color: var(--link-color);
         text-align: center;
 }
 
-.what-we-do-image {
-    display: inline-block;
+.what-we-do-images {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 94px;
 }
 
-.our-team{
-    background-color: #F5F4FA;;
+.our-team {
+    background-color: #F5F4FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.our-team h2 {
+    margin-top: 94px;
+}
+
+.team-members {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 94px;
 }
 
 .team-member {
     background-color: #FFFFFF;
-    display: inline-block;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-member-name {
@@ -156,6 +244,7 @@ color: var(--link-color);
         line-height: 19px;
         letter-spacing: 0.03em;
         text-align: center;
+        margin-top: 30px;
 }
 
 .team-member-role {
@@ -165,11 +254,22 @@ color: var(--link-color);
         letter-spacing: 0.03em;
         text-align: center;
         color: var(--details-color);
+        margin-bottom: 30px;
 }
 
 footer {
     background-color: var(--background-color);
     color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 60px;
+        padding-left: 215px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
 }
 
 .phisical-address {
@@ -190,6 +290,14 @@ footer {
 
 /*Portofolio Styles*/
 
+.filters {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
 .filter-button {
     font-size: 16px;
     font-weight: 500;
@@ -199,6 +307,8 @@ footer {
     background-color: var(--filter-backgroud);
     border:none;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 
 .filter-button:hover,
@@ -208,11 +318,26 @@ footer {
     background-color: var(--link-color);
 }
 
+.projects-cards {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 94px;
+}
 .projects {
-    border: 1px solid #EEEEEE;
     width: 370px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
 
+.projects-description {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    padding: 20px 24px;
 }
 
 .project-title {

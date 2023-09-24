@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio Homework Project</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +13,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body class="container">
     <header>
       <a class="logo" href="index.html">
         <span class="logo-web">Web</span
@@ -27,7 +28,7 @@
         </ul>
       </nav>
 
-      <div>
+      <div class="contacts">
         <a href="mailto:info@devstudio.com" class="contact-details"
           >info@devstudio.com</a
         >
@@ -76,6 +77,7 @@
             </p>
           </li>
         </ul>
+        <div>
         <h2 class="h2-title">What we do</h2>
         <ul class="what-we-do-images">
           <li class="what-we-do-image">
@@ -96,12 +98,13 @@
             <img src="./images/design.jpg" alt="web-design" width="370" />
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- Our team section -->
       <section class="our-team">
         <h2 class="h2-title">Our team</h2>
-        <ul>
+        <ul class="team-members">
           <li class="team-member">
             <img
               src="./images/team-member-1.jpg"
@@ -149,11 +152,10 @@
       </a>
 
       <adress class="address">
-        <p class="phisical-address">695 Park Ave, NY 10065, USA</p>
+        <span class="phisical-address">695 Park Ave, NY 10065, USA</span>
         <a href="mailto:info@devstudio.com" class="contact-details"
           >info@devstudio.com</a
         >
-        <br/>
         <a href="tel:+1212-772-4150" class="contact-details">+1 212-772-4150</a>
       </address>
     </footer>
